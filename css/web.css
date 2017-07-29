@@ -2,14 +2,14 @@
 
 @font-face {
     font-family: 'brandon-light'; /*a name to be used later*/
-    src: url('fonts/Brandon_light.otf'); /*URL to font*/
+    src: url('../fonts/Brandon_light.otf'); /*URL to font*/
 }
 
 
 
 @font-face {
     font-family: 'sourcesanspro_re'; /*a name to be used later*/
-    src: url('ProximaNovaReg.otf'); /*URL to font*/
+    src: url('../fontsProximaNovaReg.otf'); /*URL to font*/
 }
 
 .thumbnail {
