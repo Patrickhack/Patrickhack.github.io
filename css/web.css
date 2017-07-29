@@ -22,7 +22,7 @@
     position: relative;
 }
 
- .fourSentence {
+ .fourSentence display-3 {
     position: absolute;
     top: 45%;
     left: 0;
