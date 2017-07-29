@@ -22,13 +22,14 @@
     position: relative;
 }
 
- .fourSentence display-3 {
+ .fourSentence {
     position: absolute;
     top: 45%;
     left: 0;
     text-align: center;
     font-family: 'brandon-light';
     width: 100%;
+     background-color: yellow;
 }
 
 .intro text-center {
