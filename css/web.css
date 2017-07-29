@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: 'sourcesanspro_re'; /*a name to be used later*/
-    src: url('../fontsProximaNovaReg.otf'); /*URL to font*/
+    src: url('../fonts/ProximaNovaReg.otf'); /*URL to font*/
 }
 
 .thumbnail {
@@ -23,7 +23,6 @@
     text-align: center;
     font-family: 'brandon-light';
     width: 100%;
-	background-color:powderblue;
 
 }
 
