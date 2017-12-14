@@ -20,44 +20,45 @@
 
 
     <div class = "top">
-    <div class="thumbnail text-center">
-     <img src="images/wood.png"  alt="Responsive image" height="236">
-       <div class="fourSentence display-3" id="changeText" >
-          <script type="text/javascript">
-            var text = [ "Algorithm is a DJ." , "Coder is a Dancerfloor.", "Bug is the Rhythm.","You are the music!"];
-            var counter = 0;
-            var elem = document.getElementById("changeText");
-            elem.innerHTML = text[counter];
-            counter++;
-            setInterval(change, 3000);
-            function change() {
-             elem.innerHTML = text[counter];
-                counter++;
-                if(counter >= text.length) { counter = 0; }
-            }
-          </script>
-      </div>
+      <div class="thumbnail text-center">
+       <img src="images/wood.png"  alt="Responsive image" height="236">
+         <div class="fourSentence display-3" id="changeText" >
+            <script type="text/javascript">
+              var text = [ "Algorithm is a DJ." , "Coder is a Dancerfloor.", "Bug is the Rhythm.","You are the music!"];
+              var counter = 0;
+              var elem = document.getElementById("changeText");
+              elem.innerHTML = text[counter];
+              counter++;
+              setInterval(change, 3000);
+              function change() {
+               elem.innerHTML = text[counter];
+                  counter++;
+                  if(counter >= text.length) { counter = 0; }
+              }
+            </script>
+        </div>
     </div>
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+        <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto navbar-right">
-        <li class="nav-item active my-2 my-lg-0">
-          <a class="nav-link pull-right my-2 my-lg-0" href="index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="projects.html">Project</a>
-        </li>
-        <li class="nav-item active">
-           <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto navbar-right">
+              <li class="nav-item active my-2 my-lg-0">
+                <a class="nav-link pull-right my-2 my-lg-0" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="projects.html">Project</a>
+              </li>
+              <li class="nav-item active">
+                 <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+      </nav>
     </div>
-  </nav>
 
 
     <!-- MAIN CONTENT -->
