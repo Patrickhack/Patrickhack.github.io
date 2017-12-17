@@ -1,145 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <!-- Global Site Tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106746890-1"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments)};
-        gtag('js', new Date());
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Patrick Peng</title>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106746890-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+    gtag('config', 'UA-106746890-1');
+  </script>
+  <!-- Bootstrap -->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-        gtag('config', 'UA-106746890-1');
-      </script>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-      <title>Patrick Peng</title>
+  <link rel="stylesheet" type="text/css" href="web.css">
+  <link rel="icon" href="images/p.jpg">
 
-      <!-- Bootstrap -->
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</head>
+<body>
 
-      <link rel="stylesheet" type="text/css" href="web.css">
-      <link rel="icon" href="images/p.jpg">
-                    
-  </head>
-  <body>
-
-    <!-- navbar -->
+  <!-- navbar -->
 
 
-    <div class = "top">
-      <div class="thumbnail text-center">
-        <img src="images/wood.png"  alt="Responsive image" height="236">
-        <div class="fourSentence display-3" id="changeText" >
-          <script type="text/javascript">
-            var text = [ "Algorithm is a DJ." , "Coder is a Dancerfloor.", "Bug is the Rhythm.","You are the music!"];
-            var counter = 0;
-            var elem = document.getElementById("changeText");
-            elem.innerHTML = text[counter];
-            counter++;
-            setInterval(change, 2000);
-            function change() {
-             elem.innerHTML = text[counter];
-                counter++;
-                if(counter >= text.length) { counter = 0; }
-            }
-          </script>
-      </div>
-    </div>
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <div class = "top">
+    <div class="thumbnail text-center">
+     <img src="images/background.jpeg"  class = "photo" alt="Responsive image" height="300" width=100%>
+     <div class="fourSentence display-3" id="changeText" style="color:#FF3A33">
+      <script type="text/javascript">
+        var text = [ "Algorithm is a DJ." , "Coder is a Dancerfloor.", "Bug is the Rhythm.","You are the music!"];
+        var counter = 0;
+        var elem = document.getElementById("changeText");
+        elem.innerHTML = text[counter];
+        counter++;
+        setInterval(change, 3000);
+        function change() {
+         elem.innerHTML = text[counter];
+         counter++;
+         if(counter >= text.length) { counter = 0; }
+       }
+     </script>
+   </div>
+ </div>
+ <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
-    </button>
+  </button>
 
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto navbar-right">
       <li class="nav-item active my-2 my-lg-0">
-        <a class="nav-link pull-right my-2 my-lg-0" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link pull-right my-2 my-lg-0" href="index.html">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="projects.html">Project</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link " href="contact.html">Contact</a>
-      </li>
-    </ul>
-  </div>
+       <a class="nav-link" href="contact.html">Contact</a>
+     </li>
+   </ul>
+ </div>
 </nav>
+</div>
+<br>
 
- <div class="whitebackground">
-            <div class="row">
-                <div class = "col-md-1"></div>
-                <div class="col-md-7">
-    <!-- Your first column here -->
-                    <h1 class = "intro">Introduction</h1>
-                    <br>
-                    <br>
-                    <p>
-                    Hi, I'm Yuhao.
-                    </p>
-                    <p>
-                    I am in Boston. Now i am Full-Stack software engineer at Authright Inc. 
-                    </p>
-                    <p>
-                    Deep learning Javascript framework including Angular 5 and React, Redux. Expertise on Java Spring MVC and Spring boot as well.
-                       Have good coding and commnication skill.
-                    </p>
-                    <p>
-                      Thank you to be here!
-                    </p>
-                </div>
-                <div class="col-md-2">
-                  <br>
-                  <br>
-                  <br>
-                    <h5 >Find me on</h5>
-                    <div >
-                        <ul>
-                        <br>
-                            <li><a href="https://www.linkedin.com/in/yuhao-peng-0a576a11a/">LINKEDIN</a></li>
-                            <br>
-                            <li><a href="https://github.com/yuhaocode">GITHUB</a></li>
-                            <!--<li><a href="http://www.weibo.com/hongtaocai">WEIBO</a></li>-->
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xs-1"></div>
-            </div>
-            <div class="hcpadder"></div>
-        </div>
+<div class="whitebackground">
+  <div class="row">
+    <div class = "col-md-1"></div>
+    <div class="col-md-7">
+      <!-- Your first column here -->
+      <h1 class = "intro">Introduction</h1>
+      <br>
+      <br>
+      <p>
+        Hi, I'm Yuhao.
+      </p>
+      <p>
+        I am in Boston. Now i am Full-Stack software engineer at Authright Inc. 
+      </p>
+      <p>
+        Deep learning Javascript framework including Angular 5 and React, Redux. Expertise on Java Spring MVC and Spring boot as well.
+        Have good coding and commnication skill.
+      </p>
+      <p>
+        Thank you to be here!
+      </p>
+    </div>
+    <div class="col-md-2">
+      <br>
+      <br>
+      <br>
+      <h5 >Find me on</h5>
+      <div >
+        <ul>
+          <br>
+          <li><a href="https://www.linkedin.com/in/yuhao-peng-0a576a11a/">LINKEDIN</a></li>
+          <br>
+          <li><a href="https://github.com/yuhaocode">GITHUB</a></li>
+          <!--<li><a href="http://www.weibo.com/hongtaocai">WEIBO</a></li>-->
+        </ul>
+      </div>
+    </div>
+    <div class="col-xs-1"></div>
+  </div>
+  <div class="hcpadder"></div>
+</div>
+
+<br>
+<br>
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <p class="text-muted credit">&copy;2017 by Yuhao</p>
+      </div>
+      <div class="col-md-1"></div>
     </div>
   </div>
-  <br>
-  <br>
-  <footer class="site-footer">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-1"></div>
-              <div class="col-md-10">
-                  <p class="text-muted credit">&copy;2017 by Yuhao</p>
-              </div>
-              <div class="col-md-1"></div>
-          </div>
-      </div>
-  </footer>
+</footer>
 
-        
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-          ga('create', 'UA-106746890-1', 'auto');
-          ga('send', 'pageview');
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-106746890-1', 'auto');
+  ga('send', 'pageview');
 
 </script>
-  </body>
+</body>
 </html>

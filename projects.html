@@ -1,133 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Patrick Peng</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Patrick Peng</title>
 
-     <!-- Bootstrap -->
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-      <link rel="stylesheet" type="text/css" href="web.css">
-      <link rel="icon" href="images/p.jpg">
+  <link rel="stylesheet" type="text/css" href="web.css">
+  <link rel="icon" href="images/p.jpg">
 
-  </head>
-  <body>
+</head>
+<body>
 
-    <!-- navbar -->
-
-
-    <div class = "top">
-      <div class="thumbnail text-center">
-       <img src="images/wood.png"  alt="Responsive image" height="236">
-         <div class="fourSentence display-3" id="changeText" >
-            <script type="text/javascript">
-              var text = [ "Algorithm is a DJ." , "Coder is a Dancerfloor.", "Bug is the Rhythm.","You are the music!"];
-              var counter = 0;
-              var elem = document.getElementById("changeText");
-              elem.innerHTML = text[counter];
-              counter++;
-              setInterval(change, 3000);
-              function change() {
-               elem.innerHTML = text[counter];
-                  counter++;
-                  if(counter >= text.length) { counter = 0; }
-              }
-            </script>
-        </div>
-    </div>
-        <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+  <!-- navbar -->
 
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto navbar-right">
-              <li class="nav-item active my-2 my-lg-0">
-                <a class="nav-link pull-right my-2 my-lg-0" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="projects.html">Project</a>
-              </li>
-              <li class="nav-item active">
-                 <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-      </nav>
-    </div>
+  <div class = "top">
+    <div class="thumbnail text-center">
+     <img src="images/background.jpeg"  alt="Responsive image" class = "photo" height="300" width=100%>
+     <div class="fourSentence display-3" id="changeText" style="color:#FF3A33">
+      <script type="text/javascript">
+        var text = [ "Algorithm is a DJ." , "Coder is a Dancerfloor.", "Bug is the Rhythm.","You are the music!"];
+        var counter = 0;
+        var elem = document.getElementById("changeText");
+        elem.innerHTML = text[counter];
+        counter++;
+        setInterval(change, 3000);
+        function change() {
+         elem.innerHTML = text[counter];
+         counter++;
+         if(counter >= text.length) { counter = 0; }
+       }
+     </script>
    </div>
+ </div>
+ <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer" style = "text-align: center">
-      <section id="main_content" class="inner">
-       
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto navbar-right">
+      <li class="nav-item active my-2 my-lg-0">
+        <a class="nav-link pull-right my-2 my-lg-0" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="projects.html">Project</a>
+      </li>
+      <li class="nav-item active">
+       <a class="nav-link" href="contact.html">Contact</a>
+     </li>
+   </ul>
+ </div>
+</nav>
+</div>
 
-        <h3 >
-        
-          <a id="Machine Learning" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Machine Learning Project</h3>    
-<a href="http://ec2-54-236-59-64.compute-1.amazonaws.com/">http://ec2-54-236-59-64.compute-1.amazonaws.com/</a>
+<br />
+
+<!-- MAIN CONTENT -->
+  <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 order-2">
+            <div class="p-5">
+              <a href="https://github.com/yuhaocode/Angular-material-Spring-boot"><img class="img-fluid" src="http://sixthlife.net/wp-content/uploads/2013/03/book-store-24711.jpg" alt="" ></a>
+            </div>
+          </div>
+          <div class="col-md-6 order-1">
+            <div class="p-5">
+              <a href="https://github.com/yuhaocode/Angular-material-Spring-boot"><h1>Angular 5 bookstore platform</h1></a>
+              <p>Anuglar material as frontend, and Spring boot, Hibernate as backedn, Redis for check session. Used AJAX module to handle RESTful calls to enable communication between view components and servers. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 order-2">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="http://www.outlawkennels.net/uploads/7/2/2/1/7221094/5675671.jpg" alt=""><a href="https://yuhaocode.github.io/forum-rbac/."> </a>
+            </div>
+          </div>
+          <div class="col-md-6 order-1">
+            <div class="p-5">
+              <h4 class="display-4">Chat Forum</h4>
+              <p>Created an online full stack PHP forum for members to collaborate and discuss topics. Guests can register, login, post comments to topics. Admin can create, update, delete both topics and comments.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 order-2">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="https://img.cdn.famobi.com/portal/html5games/images/tmp/TextTwist2Teaser.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 order-1">
+            <div class="p-5">
+              <h4 class="display-4">Milestone for my first project</h4>
+              <p>My first meaningful software engineer project was to build a simple web game. Based on Jquery Ajax call and PHP backend</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 order-2">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="https://unsplash.it/500/500?image=453" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 order-1">
+            <div class="p-5">
+              <h2 class="display-4">Let there be rock!</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<br>
+<br>
+<div style = "text-align: center;">
+    <h3>
+
+      <a id="Machine Learning" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Machine Learning Project</h3>    
+      <h3>
+        <a href="http://ec2-54-236-59-64.compute-1.amazonaws.com/">http://ec2-54-236-59-64.compute-1.amazonaws.com/</a>
         <br />
         A simple web only deal with the backend
-          
-        </h3>
-        <h3>
-          
-          
-<a id="C++ project" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>C++ project</h3>    
-<a href="http://cplusbyte.yuhao.website/">Project1 polynomial addition program </a>
-         <p> The executable will consume two filenames from the command line and will print to stdout the sum of the two polynomials found in those files. 
+        
+      </h3>
+      <h3>
+
+
+        <a id="C++ project" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>C++ project</h3>    
+        <a href="http://cplusbyte.yuhao.website/">Project1 polynomial addition program </a>
+        <p> The executable will consume two filenames from the command line and will print to stdout the sum of the two polynomials found in those files. 
         </p>
-<a href="http://minesweeper.yuhao.website/">Project2 Minesweeper</a>
-         <p> Write a function which consumes three arguments width height number_of_mines and generates a Minesweeper board internally. And have fun with the simple game</p>
-<a href="http://Gee_mail.yuhao.website/">Project3 Geemail</a>
-         <p> a secure asynchronous (same-machine) message platform. Using Salsa20 and SHA256 asymmetric cryptography. People can read their mail by input the same passphrase.</p>
-<h3>
-<a id="Web projects" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Web projects</h3>
-<a href="https://yuhaocode.github.io/a-simple-login-page-with-OAUTH/."> Project1 A simple login page with Oauth</a>
-  <p>Using SQL, PHP and html.
-  people can regester, login and change their password.</p>
-<a href="https://yuhaocode.github.io/forum-rbac/."> Project2 Forum-CRUD</a>
-  <p>Mainly Using SQL, PHP.
-  Clients can post comment. Admin can CRUD topics.</p>
-        <a href="http://markovsentence.yuhao.website/">Project3 Markov sentence and twiter spider</a>
-        <p>
-        Use NodeJS Crawler to get a Twitter username and create a sample of that person's tweets, then generate a tweet in their style.</p>
- 
-  
-<h3>
-<a id="Python projects" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Python projects</h3>
+        <a href="http://minesweeper.yuhao.website/">Project2 Minesweeper</a>
+        <p> Write a function which consumes three arguments width height number_of_mines and generates a Minesweeper board internally. And have fun with the simple game</p>
+        <a href="http://Gee_mail.yuhao.website/">Project3 Geemail</a>
+        <p> a secure asynchronous (same-machine) message platform. Using Salsa20 and SHA256 asymmetric cryptography. People can read their mail by input the same passphrase.</p>
+        <h3>
+          <a id="Web projects" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Web projects</h3>
+          <a href="https://yuhaocode.github.io/a-simple-login-page-with-OAUTH/."> Project1 A simple login page with Oauth</a>
+          <p>Using SQL, PHP and html.
+          people can regester, login and change their password.</p>
+          <a href="https://yuhaocode.github.io/forum-rbac/."> Project2 Forum-CRUD</a>
+          <p>Mainly Using SQL, PHP.
+          Clients can post comment. Admin can CRUD topics.</p>
+          <a href="http://markovsentence.yuhao.website/">Project3 Markov sentence and twiter spider</a>
+          <p>
+          Use NodeJS Crawler to get a Twitter username and create a sample of that person's tweets, then generate a tweet in their style.</p>
+        
+          
+          <h3>
+            <a id="Python projects" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Python projects</h3>
 
-<a href="https://yuhaocode.github.io/Big-data-project-with-NHANES/"> Medical Data Big data project</a>
-  <p>Analysis NHANES Data Using MapReduce model with Python and Spark (K-means)</p>
-  <a href="https://github.com/yuhaocode/Big-data-project-with-NHANES/blob/master/posteryuhao.pdf"> View PPT</a>
-<h3>
-
-
-<a id="Java projects" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Java projects</h3>
-
-        <a href ="https://github.com/yuhaocode/Tankwar">Tankwar</a>
-      </section>
-  </div>
-    <footer class="site-footer">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-1"></div>
-              <div class="col-md-10">
-                  <p class="text-muted credit">&copy;2017 by Yuhao</p>
-              </div>
-              <div class="col-md-1"></div>
-          </div>
-      </div>
-  </footer>
-
-  </body>
+            <a href="https://yuhaocode.github.io/Big-data-project-with-NHANES/"> Medical Data Big data project</a>
+            <p>Analysis NHANES Data Using MapReduce model with Python and Spark (K-means)</p>
+            <a href="https://github.com/yuhaocode/Big-data-project-with-NHANES/blob/master/posteryuhao.pdf"> View PPT</a>
+            <h3>
+            <a id="Java projects" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Java projects</h3>
+</div>
+</body>
 </html>

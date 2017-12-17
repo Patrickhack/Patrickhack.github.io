@@ -1,4 +1,10 @@
 
+@media screen and (min-width: 1024px) {
+    /* Styles go here */
+    .photo {
+    width : 85%;
+    }
+}
 
 @font-face {
     font-family: 'brandon-light'; /*a name to be used later*/
@@ -10,6 +16,13 @@
 @font-face {
     font-family: 'sourcesanspro_re'; /*a name to be used later*/
     src: url('fonts/ProximaNovaReg.otf'); /*URL to font*/
+}
+
+.img-fluid{
+    border-radius: 10px;
+    
+    width : 300px;
+    height: 300px;
 }
 
 .thumbnail {
